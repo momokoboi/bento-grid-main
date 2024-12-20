@@ -1,0 +1,64 @@
+main{
+    background-color: aqua;
+    height: auto;
+}
+
+.Bento-Grid{
+    /* grid configs start*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 150px 200px 500px 450px 200px 200px 400px;
+    grid-template-areas: 
+    "Social-Media-10x"
+    "Manage-Multiple-Accounts"
+    "Maintian-Posting-Schedule"
+    "Schedule-Social-Media"
+    "Grow-Followers"
+    "Faster-Audience"
+    "Create-and-Schedule"
+    "Write-using-AI"
+    
+    ;
+    gap: 20px;
+    /* grid-configs ends */
+
+    /* 7rows, 4collumns */
+    margin: 10px;
+    /* background-color: aqua; */
+    width: 95%;
+    height: 95%;
+    padding: 10px;
+}
+
+.Manage-Multiple-Accounts > img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.sub_title{
+    min-width: 250px;
+}
+
+.Grow-Followers{
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.Grow-Followers > img{
+    width: 90%;
+}
+
+
+.Create-and-Schedule > img{
+    width: 55%;
+}
+
+.Write-using-AI > img{
+    height: 60%
+    ;}
+
+
+.attribution{
+    height: 50px;
+}

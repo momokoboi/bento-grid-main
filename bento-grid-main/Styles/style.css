@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,5 +9,318 @@
 }
 
 :root{
+    /* ## Colors */
 
+    --Purple_100: hsl(254, 88%, 90%);
+    --Purple_500: hsl(256, 67%, 59%);
+
+    --Yellow_100: hsl(31, 66%, 93%);
+    --Yellow_500: hsl(39, 100%, 71%);
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+
+    /* ## Typography */
+
+    --font_used: "DM Sans", serif;
+
+    /* ### Body Copy
+
+    - Font size (paragraph): 18px */
+
+    /* weights 400, 500 */
+
+}
+
+body{
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 96vh;
+    /* background-color: rgb(205, 40, 40); */
+}
+
+.Bento-Grid{
+    /* grid configs start*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Create-and-Schedule Social-Media-10x Social-Media-10x Schedule-Social-Media"
+    "Create-and-Schedule Social-Media-10x Social-Media-10x Schedule-Social-Media"
+    "Create-and-Schedule Social-Media-10x Social-Media-10x Schedule-Social-Media"
+    "Create-and-Schedule Manage-Multiple-Accounts Maintian-Posting-Schedule Schedule-Social-Media"
+    "Write-using-AI  Manage-Multiple-Accounts Maintian-Posting-Schedule Schedule-Social-Media"
+    "Write-using-AI Faster-Audience Grow-Followers Grow-Followers"
+    "Write-using-AI Faster-Audience Grow-Followers Grow-Followers"
+    ;
+    gap: 20px;
+    /* grid-configs ends */
+
+    /* 7rows, 4collumns */
+    margin: 10px;
+    /* background-color: aqua; */
+    width: 70%;
+    height: 95%;
+    padding: 10px;
+}
+
+img{
+    width: 50%;
+}
+
+.default-div{
+    border-radius: 8px;
+    padding: 10px;
+
+    font-family: var(--font_used);
+}
+
+/* config Social-Media start */
+.Social-Media-10x{
+    grid-area: Social-Media-10x;
+    background-color: var(--Purple_500);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+}
+
+.Social-Media-10x h1{
+    max-width: 400px;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.highlight{
+    color: var(--Yellow_500);
+}
+
+.Social-Media-10x > p{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Social-Media-10x > p > img{
+    display: block;
+    width: 40%;
+}
+/* Config Social Media end */
+
+
+/* Config Multiple Accounts start */
+.Manage-Multiple-Accounts{
+    grid-area: Manage-Multiple-Accounts;
+    background-color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
+    
+}
+
+.Manage-Multiple-Accounts > img{
+    height: 4vw;
+    width: 135%;
+    margin-left: 10px;
+}
+
+.sub_title{
+    font-weight: 530;
+    margin-left: 10px;
+    line-height: 1em;
+    width: 185px;
+}
+
+/* Config Multiple Accounts end */
+
+/* Config Posting Schedule start */
+.Maintian-Posting-Schedule{
+    grid-area: Maintian-Posting-Schedule;
+    background-color: var(--Yellow_500);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    overflow: hidden;
+
+}
+
+.sub_title{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    max-width: 150px;
+}
+
+.Maintian-Posting-Schedule > img{
+    width: 90%;
+    align-self: center;
+}
+
+/* Config Posting Schedule end */
+
+/* Config Schedule-social_media start */
+.Schedule-Social-Media{
+    grid-area:Schedule-Social-Media;
+    background-color: var(--Purple_100);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.Schedule-Social-Media > .special{
+    margin-left: 20px;
+    font-size: 1.5em;
+    line-height: 20px;
+    text-align: left;
+    font-weight: 550;
+    
+}
+
+.Schedule-Social-Media > img{
+    margin-left: 20px;
+    width: 150%;
+}
+
+.Schedule-Social-Media > p{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    max-width: 180px;
+    font-size: 0.8em;
+}
+
+/* Config schedule-social-media end */
+
+/* Grow Followers start */
+.Grow-Followers{
+    grid-area: Grow-Followers;
+    background-color: var(--Purple_500);
+
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Grow-Followers > h2{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 420;
+}
+
+.Grow-Followers > img{
+    width: 35%;
+}
+/* Grow Followers end */
+
+/* Faster audience start */
+.Faster-Audience{
+    grid-area: Faster-Audience;
+    background-color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.Faster-Audience > h2{
+    font-size: 3em;
+    font-weight: 420;
+}
+
+.Faster-Audience > p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.Faster-Audience > img{
+    width: 80%;
+}
+/* Faster audience end */
+
+
+/* Create and Schedule start */
+.Create-and-Schedule{
+    grid-area: Create-and-Schedule;
+    background-color: var(--Yellow_100);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Create-and-Schedule > h2{
+    font-size: 1.8em;
+}
+
+.highlight_purple{
+    color: var(--Purple_500);
+}
+
+.Create-and-Schedule > img{
+    width: 70%;
+}
+/* Create and Schedule end */
+
+/* Write using AI start */
+.Write-using-AI{
+    grid-area: Write-using-AI;
+    background-color: var(--Yellow_500);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Write-using-AI > h2{
+    font-size: 1.4em;
+    margin-left: 20px;
+}
+
+.Write-using-AI > img{
+    height: 68%;
+    width: 85%;
+    margin-left: 20px;
+}
+
+/* Write using AI end */
+
+.attribution{
+    background-color: rgb(86, 85, 85);
+    height: 4vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution p{
+    color: white;
+    font-family: var(--font_used);
+    font-size: 1.2em;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--Purple_500);
+    font-weight: 700;
 }

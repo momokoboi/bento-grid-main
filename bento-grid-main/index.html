@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
   
   <title>Frontend Mentor | Bento grid</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
    <link rel="stylesheet" href="Styles/style.css">
+   <link rel="stylesheet" href="Styles/style_mb.css" media="screen and (max-width: 380px)">
+   
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -20,37 +23,40 @@
       <!-- Bento Grid start -->
       <section class="Bento-Grid">
 
-        <div class="Social-Media-10x">
-          <h1 class="Title_H1 h1-Social-Media">Social Media <span class="highlight">10x</span> Faster with AI</h1>
-          <img src="assets/images/illustration-five-stars.webp" alt="five_stars">
-          <p>Over 4,000 5-star reviews</p>
+        <div class="default-div Social-Media-10x">
+          <h1 class="Title_H1 h1-Social-Media">Social Media <span class="highlight">10x</span> <em>Faster</em> with AI</h1>
+          
+          <p>
+            <img src="assets/images/illustration-five-stars.webp" alt="five_stars">
+            Over 4,000 5-star reviews</p>
         </div>
-        <div class="Manage-Multiple-Accounts">
+        <div class="default-div Manage-Multiple-Accounts">
           <img src="assets/images/illustration-multiple-platforms.webp" alt="multiple_platforms">
           <h2 class="sub_title">Manage multiple accounts and platforms.</h2>
         </div>
-        <div class="Maintian-Posting-Schedule">
+        <div class="default-div Maintian-Posting-Schedule">
           <h2 class="sub_title">Maintain a consistent posting schedule.</h2>
           <img src="assets/images/illustration-consistent-schedule.webp" alt="shedule_posts">
         </div>
-        <div class="Schedule-Social-Media">
-          <h2 class="sub_title">Schedule to social media.</h2>
+        <div class="default-div Schedule-Social-Media">
+          <h2 class="special">Schedule to social media.</h2>
           <img src="assets/images/illustration-schedule-posts.webp" alt="schedule_posts">
           <p>Optimize post timings to publish content at the perfect time for your audience.</p>
         </div>
-        <div class="Grow-Followers">
-          <h1 class="Title_h1 h1_Grow_followers">Grow followers with non-stop content.</h1>
+        <div class="default-div Grow-Followers">
+          <img src="assets/images/illustration-grow-followers.webp" alt="grow_followers">
+          <h2 class="Title_h1 h1_Grow_followers">Grow followers with non-stop content.</h2>
         </div>
-        <div class="Faster-Audience">
-          <h1>56%</h1> 
+        <div class=" default-div Faster-Audience">
+          <h2>>56%</h2> 
           <p>faster audience growth</p>
           <img src="assets/images/illustration-audience-growth.webp" alt="audience_growth">
         </div>
-        <div class="Create-and-Schedule">
-          <h2 class="sub_title">Create and schedule content <span class="highlight_purple">quicker.</span></h2>
+        <div class="default-div Create-and-Schedule">
+          <h2 class="sub_title">Create and schedule content <span class="highlight_purple"><em>quicker.</em></span></h2>
           <img src="assets/images/illustration-create-post.webp" alt="create post">
         </div>
-        <div class="Write-using-AI">
+        <div class="default-div Write-using-AI">
           <h2 class="sub_title">Write your content using AI.</h2>
           <img src="assets/images/illustration-ai-content.webp" alt="Ai_content">
         </div>
@@ -59,8 +65,10 @@
     
   </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Luca Pohl-Angel</a>.
+    </p>
   </div>
 </body>
 </html>
