@@ -1,5 +1,5 @@
 main{
-    /* background-color: aqua; */
+    /* background-color: yellow; */
     height: auto;
 }
 
@@ -30,14 +30,32 @@ main{
     padding: 10px;
 }
 
+.Manage-Multiple-Accounts{
+    align-items: center;
+}
 .Manage-Multiple-Accounts > img{
-    height: 100%;
-    width: 100%;
-    
+    height: 60px;
+    width: 300px;
 }
 
 .sub_title{
     min-width: 250px;
+}
+
+.Maintian-Posting-Schedule{
+    align-items: center;
+}
+
+.Maintian-Posting-Schedule > img{
+    width: 300px;
+}
+
+.Schedule-Social-Media{
+    align-items: center;
+}
+
+.Schedule-Social-Media > img{
+    width: 300px;
 }
 
 .Grow-Followers{
@@ -46,17 +64,33 @@ main{
 }
 
 .Grow-Followers > img{
-    width: 90%;
+    width: 300px;
+}
+.Faster-Audience{
+    justify-content: center;
+    align-items: center;
 }
 
+.Faster-Audience > img{
+    width: 40%;
+}
 
+.Create-and-Schedule{
+    align-items: center;
+    justify-content: center;
+}
 .Create-and-Schedule > img{
-    width: 55%;
+    width: 150px;
 }
 
+.Write-using-AI {
+    justify-content: center;
+    align-items: center;
+}
 .Write-using-AI > img{
-    height: 60%
-    ;}
+    height: 250px;
+    width: 300px;
+    }
 
 
 .attribution{
